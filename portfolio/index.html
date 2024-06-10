@@ -4,15 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./script/css/styles.css">
+        
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+        
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
         <title>Portfolio | Rajdeepsinh </title>
     </head>
     <body>
+        
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -48,7 +50,6 @@
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/rajdeepsinh-barad-031698207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blanks" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://www.instagram.com/_rajdeepsinh_barad/?igsh=MXE4OGZ1cWF4MmdjeA%3D%3D" target="_blank" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <!-- <a href="https://instagram.com/clyusz_" class="footer__icon"><i class='bx bxl-instagram' ></i></a> -->
                     <a href="https://github.com/Rajdeepsinh18" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
 
@@ -185,11 +186,13 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                        <input type="hidden" name="access_key" value="9749e5ac-fdd7-49f5-9100-e68b6134e662">
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                        <textarea name="Message" id="Message" cols="0" rows="10" class="contact__input"></textarea>
+                        <button type="submit" class="contact__button">Submit</button>
+                    </form>
                     </form>
                 </div>
             </section>
@@ -205,26 +208,7 @@
             </div>
             <p>&#169; 2024 copyright all right reserved</p>
         </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="./script/js/main.js    "></script>
-
-        <!---==== PARTICLES JS=====-->
-        <div id="particles-js"></div>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script>
-            particlesJS.load('particles-js', 'particles.json',
-            function(){
-                console.log('particles.json loaded...')
-            })
-        </script>   
-        <script type="text/javascript" src="./script/js/app.js"></script>
-        <script type="text/javascript" src="./script/js/particles.js"></script>
-    
+        <script type="text/javascript" src="./js/particles.js"></script>
     </body>
 </html>
 
